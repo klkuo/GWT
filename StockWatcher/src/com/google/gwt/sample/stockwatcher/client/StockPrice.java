@@ -1,4 +1,4 @@
-package com.google.gwt.sample.stockwater.client;
+package com.google.gwt.sample.stockwatcher.client;
 
 public class StockPrice {
     private String symbol;

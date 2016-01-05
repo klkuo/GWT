@@ -58,13 +58,11 @@ public class StockWatcher implements EntryPoint {
         // Move cursor focus to the input box.
         newSymbolTextBox.setFocus(true);
 
-/*
         addStockButton.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 addStock();
             }
         });
-        */
 
         newSymbolTextBox.addKeyDownHandler(new KeyDownHandler() {
             public void onKeyDown(KeyDownEvent event) {
@@ -105,7 +103,6 @@ public class StockWatcher implements EntryPoint {
         stocks.add(symbol);
         stocksFlexTable.setText(row, 0, symbol);
 
-/*
         Button removeStockButton = new Button("x");
         removeStockButton.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
@@ -114,7 +111,6 @@ public class StockWatcher implements EntryPoint {
                 stocksFlexTable.removeow(removedIndex + 1);
             }
         });
-        */
 
         refreshWatchList();
     }
